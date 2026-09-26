@@ -6,7 +6,11 @@
 
 <title>MoonNodes | Minecraft Hosting</title>
 
+<meta name="description"
+content="MoonNodes provides simple, powerful and affordable Minecraft hosting.">
+
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -16,160 +20,263 @@
 }
 
 body{
-    background:#060611;
-    color:white;
+    background:#05050d;
+    color:#fff;
+    overflow-x:hidden;
 }
+
+/* NAVBAR */
 
 nav{
     position:sticky;
     top:0;
     z-index:1000;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 7%;
-    background:rgba(7,7,20,.95);
+
+    padding:17px 7%;
+
+    background:rgba(5,5,15,.94);
+    backdrop-filter:blur(15px);
+
     border-bottom:1px solid #24243b;
 }
 
 .logo{
-    font-size:24px;
-    font-weight:bold;
-    color:#a970ff;
+    font-size:25px;
+    font-weight:800;
+}
+
+.logo span{
+    color:#9b6cff;
 }
 
 nav a{
-    color:#ddd;
+    color:#bbb;
     text-decoration:none;
-    margin-left:20px;
+    margin-left:23px;
     font-size:14px;
+    transition:.2s;
 }
 
 nav a:hover{
     color:#a970ff;
 }
 
+/* HERO */
+
 .hero{
-    min-height:620px;
+    min-height:680px;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     text-align:center;
-    padding:80px 20px;
+
+    padding:90px 20px;
+
     background:
-    radial-gradient(circle at top,#31206b 0%,#120c2d 35%,#060611 75%);
+    radial-gradient(
+        circle at top,
+        #40258b 0%,
+        #1b0e3e 30%,
+        #080812 68%,
+        #05050d 100%
+    );
 }
 
 .hero-content{
-    max-width:850px;
+    max-width:900px;
 }
 
 .badge{
     display:inline-block;
-    padding:8px 15px;
-    border:1px solid #7147d9;
+
+    padding:9px 17px;
+
+    border:1px solid #7045dc;
     border-radius:30px;
-    color:#b995ff;
-    background:#17102f;
-    margin-bottom:25px;
+
+    color:#c5a7ff;
+    background:rgba(110,65,200,.15);
+
+    margin-bottom:28px;
+
     font-size:13px;
 }
 
 .hero h1{
-    font-size:58px;
-    line-height:1.1;
-    margin-bottom:22px;
+    font-size:64px;
+    line-height:1.05;
+
+    margin-bottom:25px;
+
+    letter-spacing:-2px;
 }
 
 .gradient{
-    color:#a970ff;
+    background:linear-gradient(
+        90deg,
+        #8b5cf6,
+        #c084fc
+    );
+
+    -webkit-background-clip:text;
+    color:transparent;
 }
 
 .hero p{
-    color:#bdbdcc;
+    color:#aaaabd;
+
     font-size:18px;
     line-height:1.7;
-    margin-bottom:32px;
+
+    max-width:700px;
+
+    margin:0 auto 35px;
 }
 
 .buttons{
     display:flex;
     justify-content:center;
-    gap:15px;
+
+    gap:14px;
+
     flex-wrap:wrap;
 }
 
 .btn{
     display:inline-block;
-    padding:14px 25px;
-    border-radius:9px;
+
+    padding:14px 27px;
+
+    border-radius:10px;
+
     text-decoration:none;
+
     font-weight:bold;
+
+    transition:.25s;
 }
 
 .primary{
-    background:#8b5cf6;
+    background:linear-gradient(
+        135deg,
+        #8b5cf6,
+        #6d3eea
+    );
+
     color:white;
+
+    box-shadow:
+        0 8px 25px rgba(139,92,246,.25);
 }
 
 .primary:hover{
-    background:#9b70ff;
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(139,92,246,.4);
 }
 
 .secondary{
-    border:1px solid #393956;
+    border:1px solid #383852;
+
     color:white;
-    background:#111122;
+
+    background:#10101c;
 }
 
+.secondary:hover{
+    border-color:#8b5cf6;
+
+    transform:translateY(-3px);
+}
+
+/* SECTIONS */
+
 section{
-    padding:80px 7%;
+    padding:90px 7%;
 }
 
 .title{
     text-align:center;
-    font-size:35px;
-    margin-bottom:12px;
+
+    font-size:38px;
+
+    margin-bottom:14px;
 }
 
 .subtitle{
     text-align:center;
-    color:#9999aa;
-    margin-bottom:45px;
+
+    color:#9292a6;
+
+    margin-bottom:50px;
 }
+
+/* CARDS */
 
 .grid{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:22px;
 }
 
 .card{
-    background:linear-gradient(145deg,#111124,#0c0c18);
-    border:1px solid #28283f;
-    border-radius:16px;
+    background:
+    linear-gradient(
+        145deg,
+        #111121,
+        #0b0b15
+    );
+
+    border:1px solid #26263d;
+
+    border-radius:18px;
+
     padding:30px;
+
     transition:.3s;
 }
 
 .card:hover{
     transform:translateY(-7px);
+
     border-color:#8b5cf6;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.3);
 }
 
 .icon{
-    font-size:32px;
+    font-size:34px;
+
     margin-bottom:18px;
 }
 
 .card h3{
     margin-bottom:12px;
-    color:#b995ff;
+
+    color:#c09cff;
 }
 
 .card p{
-    color:#aaaaba;
-    line-height:1.6;
+    color:#a3a3b4;
+
+    line-height:1.65;
+}
+
+/* PLANS */
+
+.plans{
+    background:#080810;
 }
 
 .plans .card{
@@ -177,168 +284,346 @@ section{
 }
 
 .price{
-    font-size:38px;
+    font-size:42px;
+
     font-weight:bold;
+
     margin:20px 0;
 }
 
 .price span{
     font-size:14px;
-    color:#888;
+
+    color:#777;
+
     font-weight:normal;
 }
 
 .plan-list{
     list-style:none;
-    color:#bbb;
-    line-height:2;
-    margin-bottom:25px;
+
+    color:#aaa;
+
+    line-height:2.1;
+
+    margin-bottom:28px;
 }
 
 .featured{
     border:1px solid #8b5cf6;
-    box-shadow:0 0 30px rgba(139,92,246,.12);
+
+    box-shadow:
+        0 0 35px rgba(139,92,246,.15);
+
+    transform:scale(1.02);
+}
+
+.featured:hover{
+    transform:
+        scale(1.04)
+        translateY(-7px);
 }
 
 .popular{
     display:inline-block;
+
     background:#8b5cf6;
-    padding:6px 12px;
+
+    padding:7px 14px;
+
     border-radius:20px;
+
     font-size:12px;
-    margin-bottom:5px;
+
+    margin-bottom:8px;
 }
 
+/* STATUS */
+
 .status-box{
-    max-width:700px;
+    max-width:750px;
+
     margin:auto;
-    background:#10101f;
+
+    background:#10101d;
+
     border:1px solid #292940;
-    border-radius:16px;
-    padding:30px;
+
+    border-radius:18px;
+
+    padding:35px;
+
     text-align:center;
 }
 
-.online{
+.status-dot{
     color:#3ee58b;
+
+    font-size:18px;
+
     font-weight:bold;
-    margin-bottom:10px;
+
+    margin-bottom:12px;
 }
 
-.steps{
-    counter-reset:step;
+.status-note{
+    color:#999;
+
+    line-height:1.6;
 }
 
-.step{
-    position:relative;
-}
+/* HOW IT WORKS */
 
 .step-number{
-    width:45px;
-    height:45px;
+    width:48px;
+    height:48px;
+
     display:flex;
+
     align-items:center;
     justify-content:center;
-    background:#8b5cf6;
+
+    background:
+    linear-gradient(
+        135deg,
+        #8b5cf6,
+        #6d3eea
+    );
+
     border-radius:50%;
+
     font-weight:bold;
-    margin-bottom:18px;
+
+    margin-bottom:20px;
+
+    font-size:18px;
 }
 
+/* FAQ */
+
 .faq{
-    max-width:800px;
+    max-width:850px;
+
     margin:auto;
 }
 
 details{
-    background:#10101f;
+    background:#10101d;
+
     border:1px solid #292940;
-    border-radius:10px;
-    padding:18px;
-    margin-bottom:12px;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    margin-bottom:13px;
+
+    transition:.2s;
+}
+
+details:hover{
+    border-color:#7045dc;
 }
 
 summary{
     cursor:pointer;
+
     font-weight:bold;
 }
 
 details p{
     color:#aaa;
+
     margin-top:15px;
+
     line-height:1.6;
 }
 
+/* CONTACT */
+
 .contact{
     text-align:center;
-    background:linear-gradient(135deg,#120c2d,#201247);
+
+    background:
+    radial-gradient(
+        circle at center,
+        #281152,
+        #100a20 55%,
+        #07070e
+    );
 }
+
+.contact .title{
+    font-size:42px;
+}
+
+.contact .subtitle{
+    max-width:650px;
+
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* FOOTER */
 
 footer{
     text-align:center;
-    padding:30px;
-    color:#777;
+
+    padding:35px 20px;
+
+    color:#666;
+
     border-top:1px solid #1d1d2d;
+
+    font-size:14px;
 }
 
-@media(max-width:800px){
-    .grid{
-        grid-template-columns:1fr;
-    }
+/* MOBILE */
 
-    .hero h1{
-        font-size:40px;
+@media(max-width:800px){
+
+    nav{
+        padding:15px 5%;
     }
 
     nav a{
         display:none;
     }
 
+    .hero{
+        min-height:620px;
+
+        padding:70px 20px;
+    }
+
+    .hero h1{
+        font-size:42px;
+
+        letter-spacing:-1px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
     section{
-        padding:60px 5%;
+        padding:65px 5%;
+    }
+
+    .title{
+        font-size:30px;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .featured{
+        transform:none;
+    }
+
+    .featured:hover{
+        transform:translateY(-7px);
+    }
+
+    .contact .title{
+        font-size:32px;
     }
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+
 <nav>
-    <div class="logo">🌙 MoonNodes</div>
+
+    <div class="logo">
+        🌙 <span>Moon</span>Nodes
+    </div>
 
     <div>
-        <a href="#features">Features</a>
-        <a href="#plans">Plans</a>
-        <a href="#status">Status</a>
-        <a href="#faq">FAQ</a>
+
+        <a href="#features">
+            Features
+        </a>
+
+        <a href="#plans">
+            Plans
+        </a>
+
+        <a href="#status">
+            Status
+        </a>
+
+        <a href="#how">
+            How It Works
+        </a>
+
+        <a href="#faq">
+            FAQ
+        </a>
+
     </div>
+
 </nav>
 
+
+<!-- HERO -->
+
 <section class="hero">
+
     <div class="hero-content">
 
-        <div class="badge">⚡ Minecraft Hosting • Built for Gamers</div>
+        <div class="badge">
+            ⚡ Minecraft Hosting • Built for Gamers
+        </div>
 
         <h1>
-            Powerful <span class="gradient">Minecraft Hosting</span>
+            Powerful
+            <span class="gradient">
+                Minecraft Hosting
+            </span>
         </h1>
 
         <p>
-            Fast, reliable and affordable hosting for your Minecraft server.
+            Fast, reliable and affordable hosting
+            for your Minecraft server.
             Build your community with MoonNodes.
         </p>
 
         <div class="buttons">
-            <a class="btn primary" href="#plans">View Plans</a>
-            <a class="btn secondary" href="#features">Explore Features</a>
+
+            <a
+                class="btn primary"
+                href="#plans"
+            >
+                View Plans
+            </a>
+
+            <a
+                class="btn secondary"
+                href="#features"
+            >
+                Explore Features
+            </a>
+
         </div>
 
     </div>
+
 </section>
+
+
+<!-- FEATURES -->
 
 <section id="features">
 
-    <h2 class="title">Everything You Need</h2>
+    <h2 class="title">
+        Everything You Need
+    </h2>
 
     <p class="subtitle">
         Simple, powerful and reliable Minecraft hosting.
@@ -347,243 +632,489 @@ footer{
     <div class="grid">
 
         <div class="card">
-            <div class="icon">⚡</div>
-            <h3>High Performance</h3>
+
+            <div class="icon">
+                ⚡
+            </div>
+
+            <h3>
+                High Performance
+            </h3>
+
             <p>
-                Resources designed to provide smooth Minecraft gameplay.
+                Resources designed for smooth
+                Minecraft gameplay.
             </p>
+
         </div>
 
-        <div class="card">
-            <div class="icon">🛡️</div>
-            <h3>Reliable Hosting</h3>
-            <p>
-                Keep your Minecraft world available for your community.
-            </p>
-        </div>
 
         <div class="card">
-            <div class="icon">🎮</div>
-            <h3>Minecraft Ready</h3>
+
+            <div class="icon">
+                🛡️
+            </div>
+
+            <h3>
+                Reliable Hosting
+            </h3>
+
             <p>
-                Built specifically for Minecraft server owners.
+                Keep your Minecraft world
+                available for your community.
             </p>
+
         </div>
 
-        <div class="card">
-            <div class="icon">🚀</div>
-            <h3>Easy Setup</h3>
-            <p>
-                Simple server management designed for beginners.
-            </p>
-        </div>
 
         <div class="card">
-            <div class="icon">💾</div>
-            <h3>Server Storage</h3>
+
+            <div class="icon">
+                🎮
+            </div>
+
+            <h3>
+                Minecraft Ready
+            </h3>
+
             <p>
-                Space for worlds, plugins, configurations and backups.
+                Built specifically for
+                Minecraft server owners.
             </p>
+
         </div>
 
+
         <div class="card">
-            <div class="icon">💬</div>
-            <h3>Community Support</h3>
+
+            <div class="icon">
+                🚀
+            </div>
+
+            <h3>
+                Easy Setup
+            </h3>
+
             <p>
-                Get help and stay connected with the MoonNodes community.
+                Simple server management
+                designed for beginners.
             </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                💾
+            </div>
+
+            <h3>
+                Server Storage
+            </h3>
+
+            <p>
+                Space for worlds, plugins,
+                configurations and backups.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                💬
+            </div>
+
+            <h3>
+                Community Support
+            </h3>
+
+            <p>
+                Get help and stay connected
+                with the MoonNodes community.
+            </p>
+
         </div>
 
     </div>
+
 </section>
 
-<section id="plans" class="plans">
 
-    <h2 class="title">Minecraft Hosting Plans</h2>
+<!-- PLANS -->
+
+<section
+    id="plans"
+    class="plans"
+>
+
+    <h2 class="title">
+        Minecraft Hosting Plans
+    </h2>
 
     <p class="subtitle">
-        Choose a plan for your Minecraft server.
+        Planned hosting packages for MoonNodes.
     </p>
 
     <div class="grid">
 
+
+        <!-- STARTER -->
+
         <div class="card">
-            <h3>Starter</h3>
+
+            <h3>
+                Starter
+            </h3>
 
             <div class="price">
-                ₹49 <span>/month</span>
+                ₹49
+                <span>/month</span>
             </div>
 
             <ul class="plan-list">
-                <li>✓ 1 GB RAM</li>
-                <li>✓ 1 CPU Core</li>
-                <li>✓ 10 GB Storage</li>
-                <li>✓ Minecraft Support</li>
+
+                <li>
+                    ✓ 1 GB RAM
+                </li>
+
+                <li>
+                    ✓ 1 CPU Core
+                </li>
+
+                <li>
+                    ✓ 10 GB Storage
+                </li>
+
+                <li>
+                    ✓ Minecraft Support
+                </li>
+
             </ul>
 
-            <a class="btn secondary" href="#contact">Get Started</a>
+            <a
+                class="btn secondary"
+                href="#contact"
+            >
+                Coming Soon
+            </a>
+
         </div>
+
+
+        <!-- PRO -->
 
         <div class="card featured">
 
-            <div class="popular">MOST POPULAR</div>
+            <div class="popular">
+                MOST POPULAR
+            </div>
 
-            <h3>Pro</h3>
+            <h3>
+                Pro
+            </h3>
 
             <div class="price">
-                ₹99 <span>/month</span>
+                ₹99
+                <span>/month</span>
             </div>
 
             <ul class="plan-list">
-                <li>✓ 2 GB RAM</li>
-                <li>✓ 2 CPU Cores</li>
-                <li>✓ 20 GB Storage</li>
-                <li>✓ Minecraft Support</li>
+
+                <li>
+                    ✓ 2 GB RAM
+                </li>
+
+                <li>
+                    ✓ 2 CPU Cores
+                </li>
+
+                <li>
+                    ✓ 20 GB Storage
+                </li>
+
+                <li>
+                    ✓ Minecraft Support
+                </li>
+
             </ul>
 
-            <a class="btn primary" href="#contact">Get Started</a>
+            <a
+                class="btn primary"
+                href="#contact"
+            >
+                Coming Soon
+            </a>
 
         </div>
 
+
+        <!-- PREMIUM -->
+
         <div class="card">
 
-            <h3>Premium</h3>
+            <h3>
+                Premium
+            </h3>
 
             <div class="price">
-                ₹199 <span>/month</span>
+                ₹199
+                <span>/month</span>
             </div>
 
             <ul class="plan-list">
-                <li>✓ 4 GB RAM</li>
-                <li>✓ 3 CPU Cores</li>
-                <li>✓ 40 GB Storage</li>
-                <li>✓ Minecraft Support</li>
+
+                <li>
+                    ✓ 4 GB RAM
+                </li>
+
+                <li>
+                    ✓ 3 CPU Cores
+                </li>
+
+                <li>
+                    ✓ 40 GB Storage
+                </li>
+
+                <li>
+                    ✓ Minecraft Support
+                </li>
+
             </ul>
 
-            <a class="btn secondary" href="#contact">Get Started</a>
+            <a
+                class="btn secondary"
+                href="#contact"
+            >
+                Coming Soon
+            </a>
 
         </div>
 
     </div>
+
 </section>
+
+
+<!-- STATUS -->
 
 <section id="status">
 
-    <h2 class="title">System Status</h2>
+    <h2 class="title">
+        MoonNodes Status
+    </h2>
 
     <p class="subtitle">
-        Check the current MoonNodes service status.
+        Current project status.
     </p>
 
     <div class="status-box">
 
-        <div class="online">● All Systems Operational</div>
+        <div class="status-dot">
+            ● Website Online
+        </div>
 
-        <p style="color:#999;">
-            Website and services are currently online.
+        <p class="status-note">
+            MoonNodes hosting infrastructure is currently
+            being developed. Hosting services will launch
+            after the platform is ready.
         </p>
 
     </div>
 
 </section>
 
-<section>
 
-    <h2 class="title">How It Works</h2>
+<!-- HOW IT WORKS -->
+
+<section id="how">
+
+    <h2 class="title">
+        How It Works
+    </h2>
 
     <p class="subtitle">
-        Getting started with MoonNodes is simple.
+        Getting started with MoonNodes will be simple.
     </p>
 
-    <div class="grid steps">
+    <div class="grid">
 
-        <div class="card step">
-            <div class="step-number">1</div>
-            <h3>Choose a Plan</h3>
-            <p>Select the resources your Minecraft server needs.</p>
+
+        <div class="card">
+
+            <div class="step-number">
+                1
+            </div>
+
+            <h3>
+                Choose a Plan
+            </h3>
+
+            <p>
+                Select the resources your
+                Minecraft server needs.
+            </p>
+
         </div>
 
-        <div class="card step">
-            <div class="step-number">2</div>
-            <h3>Set Up Your Server</h3>
-            <p>Configure your Minecraft server and install your plugins.</p>
+
+        <div class="card">
+
+            <div class="step-number">
+                2
+            </div>
+
+            <h3>
+                Create Your Server
+            </h3>
+
+            <p>
+                Configure your Minecraft server,
+                plugins and settings.
+            </p>
+
         </div>
 
-        <div class="card step">
-            <div class="step-number">3</div>
-            <h3>Start Playing</h3>
-            <p>Invite your friends and build your Minecraft community.</p>
+
+        <div class="card">
+
+            <div class="step-number">
+                3
+            </div>
+
+            <h3>
+                Start Playing
+            </h3>
+
+            <p>
+                Invite your friends and
+                build your Minecraft community.
+            </p>
+
         </div>
 
     </div>
+
 </section>
+
+
+<!-- FAQ -->
 
 <section id="faq">
 
-    <h2 class="title">Frequently Asked Questions</h2>
+    <h2 class="title">
+        Frequently Asked Questions
+    </h2>
 
     <p class="subtitle">
-        Some common questions about MoonNodes.
+        Common questions about MoonNodes.
     </p>
 
     <div class="faq">
 
-        <details>
-            <summary>What is MoonNodes?</summary>
-            <p>
-                MoonNodes is a Minecraft hosting project focused on simple
-                and affordable server hosting.
-            </p>
-        </details>
 
         <details>
-            <summary>Does MoonNodes support Minecraft?</summary>
+
+            <summary>
+                What is MoonNodes?
+            </summary>
+
             <p>
-                Yes. MoonNodes is designed specifically for Minecraft servers.
+                MoonNodes is a Minecraft hosting
+                project focused on simple,
+                powerful and affordable hosting.
             </p>
+
         </details>
 
+
         <details>
-            <summary>Can I host my own server?</summary>
+
+            <summary>
+                Is MoonNodes hosting available now?
+            </summary>
+
             <p>
-                Yes. The platform is designed to provide resources for
-                Minecraft server owners.
+                The website is online, but the
+                actual hosting infrastructure is
+                currently being developed.
             </p>
+
         </details>
+
+
+        <details>
+
+            <summary>
+                Will I be able to host a Minecraft server?
+            </summary>
+
+            <p>
+                Yes. The planned platform will
+                provide resources for Minecraft
+                server owners.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Will there be different plans?
+            </summary>
+
+            <p>
+                Yes. MoonNodes is planning multiple
+                Minecraft hosting packages for
+                different server requirements.
+            </p>
+
+        </details>
+
 
     </div>
+
 </section>
 
-<section id="contact" class="contact" style="text-align:center; padding:60px 20px;">
 
-    <h2 class="title">Ready to Build Your Server?</h2>
+<!-- CONTACT / CTA -->
+
+<section
+    id="contact"
+    class="contact"
+>
+
+    <h2 class="title">
+        Ready to Build Your Server?
+    </h2>
 
     <p class="subtitle">
-        MoonNodes is currently being built. More features are coming soon.
+        MoonNodes is currently in development.
+        The hosting platform is coming soon.
     </p>
 
-    <a class="btn primary" href="#plans">View Hosting Plans</a>
+    <a
+        class="btn primary"
+        href="#plans"
+    >
+        View Planned Plans
+    </a>
 
 </section>
+
+
+<!-- FOOTER -->
 
 <footer>
-    © 2026 MoonNodes. All rights reserved.
+
+    © 2026 MoonNodes.
+    All rights reserved.
+
 </footer>
 
-</body>
-    <section class="contact" style="text-align:center; padding:60px 20px;">
-  <h2>Ready to Start?</h2>
-  <p>Join MoonNodes and get ready for a better Minecraft hosting experience.</p>
-  <a href="#" class="btn primary">Get Started</a>
-</section>
 
 </body>
-<section class="contact" style="text-align:center; padding:60px 20px;">
-  <h2>Ready to Start?</h2>
-  <p>Join MoonNodes and get ready for a better Minecraft hosting experience.</p>
-  <a href="#" class="btn primary">Get Started</a>
-</section>
-
-</body>
-</html>
-</html>
+                </html>
