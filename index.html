@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MoonNodes | Minecraft Hosting</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #080812;
+      color: white;
+    }
+
+    nav {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0d0d1c;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #a970ff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #100b25, #171044);
+    }
+
+    .hero h1 {
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
+
+    .hero span {
+      color: #a970ff;
+    }
+
+    .hero p {
+      color: #c7c7d8;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #8b5cf6;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #111122;
+      border: 1px solid #292943;
+      border-radius: 12px;
+      padding: 30px;
+      width: 280px;
+    }
+
+    .card h3 {
+      color: #a970ff;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 30px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .status {
+      color: #39e58c;
+      font-weight: bold;
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      background: #0d0d1c;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      nav a {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">🌙 MoonNodes</div>
+
+    <div>
+      <a href="#plans">Plans</a>
+      <a href="#features">Features</a>
+      <a href="#status">Status</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Powerful <span>Minecraft Hosting</span></h1>
+
+    <p>
+      Fast, reliable and affordable Minecraft hosting by MoonNodes.
+    </p>
+
+    <a class="button" href="#plans">View Plans</a>
+  </div>
+
+  <section id="features">
+    <h2>Why MoonNodes?</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>⚡ Fast Performance</h3>
+        <p>Powerful resources for smooth Minecraft gameplay.</p>
+      </div>
+
+      <div class="card">
+        <h3>🛡️ Reliable</h3>
+        <p>Designed for stable and reliable server hosting.</p>
+      </div>
+
+      <div class="card">
+        <h3>🎮 Minecraft</h3>
+        <p>Made specifically for Minecraft server owners.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="plans">
+    <h2>Hosting Plans</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Starter</h3>
+        <div class="price">₹49</div>
+        <p>1 GB RAM</p>
+        <p>1 CPU Core</p>
+        <p>10 GB Storage</p>
+      </div>
+
+      <div class="card">
+        <h3>Pro</h3>
+        <div class="price">₹99</div>
+        <p>2 GB RAM</p>
+        <p>2 CPU Cores</p>
+        <p>20 GB Storage</p>
+      </div>
+
+      <div class="card">
+        <h3>Premium</h3>
+        <div class="price">₹199</div>
+        <p>4 GB RAM</p>
+        <p>3 CPU Cores</p>
+        <p>40 GB Storage</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="status">
+    <h2>Server Status</h2>
+
+    <p class="status">● All Systems Operational</p>
+  </section>
+
+  <footer>
+    © 2026 MoonNodes. All rights reserved.
+  </footer>
+
+</body>
+</html>
